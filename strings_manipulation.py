@@ -12,3 +12,11 @@ print(b.upper())
 #Making strings into lower case
 m = "ADA IS A GIRL"
 print(m.lower())
+
+#removing white space
+g = " you should go home now"
+print(g.strip())
+
+#replacing strings
+v = "Hello, World"
+print(v.replace("H", "Y"))
