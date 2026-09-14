@@ -1,0 +1,10 @@
+def commaCode(items):
+    if len(items) == 0:
+        return ''
+    elif len(items) == 1:
+        return items[0]
+    else:
+    return ', '.join(items[:-1]) + ', and ' + items[-1]
+
+spam = ['apple', 'banana', 'tofu', 'cat']
+print(commaCode(spam))
