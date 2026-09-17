@@ -1,9 +1,10 @@
 def printTable(table):
-    colWidths = [0] * len(tableData)
+    colWidths = [0] * len(tableData[0])
 
     for row in table:
         for i in range(len(row)):
             colWidths[i] = max(colWidths[i], len(row[i]))
+
     for row in table:
         for i in range(len(row)):
             print(row[i].rjust(colWidths[i]), end=' ')
